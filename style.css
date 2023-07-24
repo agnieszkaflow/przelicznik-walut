@@ -1,0 +1,95 @@
+.logo {
+  width: 200px;
+  height: 150px;
+  background-size: cover;
+  background-image: url(coins-1726618_1280.jpg);
+  display: flex;
+  margin-bottom: 20px;
+  border: solid;
+}
+
+.title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  margin-left: 150px;
+  border: solid;
+  padding: 20px;
+  position: fixed;
+  background-color: white;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.inputs {
+  display: flex;
+  margin-left: 10px;
+}
+#amount {
+  margin: 10px;
+  width: 80px;
+  height: 20px;
+  padding: 0;
+}
+#currency {
+  margin: 10px;
+  width: 80px;
+  height: 25px;
+}
+.submit {
+  margin: 10px;
+  width: 80px;
+  height: 25px;
+  padding: 0;
+}
+.it {
+  margin: 10px 0;
+}
+.result {
+  margin-left: 10px;
+  border: solid;
+  padding: 10px;
+  width: 100px;
+  height: 25px;
+  margin-top: 0;
+}
+.pl-currency {
+  margin: 10px;
+}
+.decor {
+  background-image: url(złotówki.jpg);
+  width: 100px;
+  height: 80px;
+  background-size: cover;
+}
+.visible.loader {
+  display: flex;
+}
+.loader {
+  display: none;
+  top: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.image {
+  width: 100px;
+  height: 100px;
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

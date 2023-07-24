@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Przelicznik walut</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav">
+        <logo class="logo"></logo>
+        <h1 class="title">PRZELICZNIK WALUT</h1>
+      </div>
+    </nav>
+    <main>
+      <div class="inputs">
+        <input type="number" id="amount" placeholder="kwota" />
+        <select id="currency">
+          <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+          <option value="CHF">CHF</option>
+        </select>
+        <button class="submit">PRZELICZ</button>
+        <p class="it">TO</p>
+        <p class="result"></p>
+        <p class="pl-currency">PLN</p>
+      </div>
+    </main>
+    <div class="loader">
+      <img src="loader-icon.png" class="image" alt="picture" />
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
