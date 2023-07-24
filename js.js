@@ -9,7 +9,7 @@ const urlAPI = "http://api.nbp.pl/api/exchangerates/tables/A/";
 
 const fetchExchangerateFromAPI = () => {};
 
-//f konwertująca dane
+
 const currencyConwerter = () => {
   const inputValue = inputAmount.value;
   const selectedValue = selectCurrency.value;
@@ -29,7 +29,7 @@ const currencyConwerter = () => {
     });
 };
 
-//f sprawdzająca wartość inputa
+
 const inputValidate = () => {
   if (inputAmount.value === "") {
     alert("wartość nie może być pusta");
@@ -40,7 +40,7 @@ const inputValidate = () => {
     currencyConwerter();
   }
 };
-// nasłuchiwanie eventu submit
+
 submitButton.addEventListener("click", () => {
   showLoader();
   inputValidate();
